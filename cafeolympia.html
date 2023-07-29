@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="olympia.css">
+    <title>Khans Kitchen</title>
+</head>
+<body>
+    
+    <div class="header">
+
+        <div class="navbar">
+
+            <div class="navbar-logo">
+                <p>Logo</p>
+            </div>
+
+
+            <div class="navbar-content">
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="review.html">Review</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Login/Signup</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="container-fluid">
+        <div class="card-1">            
+            <div class="card-body">
+                 <h3>Cafe Olympia</h3>
+                 
+                 <div id="btn-container">
+                    <button type="button" class="btn active" onclick="filterSelection('all')">All</button>
+                    <button type="button" class="btn" onclick="filterSelection('snacks')">Snacks</button>
+                    <button type="button" class="btn" onclick="filterSelection('breakfast')">BreakFast</button>
+                    <button type="button" class="btn" onclick="filterSelection('lunch')">Lunch</button>
+                    <button type="button" class="btn" onclick="filterSelection('dessert')">Dessert</button>
+                    <button type="button" class="btn" onclick="filterSelection('beverages')">Beverages</button>
+                 </div>
+            </div>
+
+           
+        </div>
+        
+    
+    </div>
+
+
+
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+       
+
+        
+        <div class="col">
+            <div class="card dessert">
+                <img src="pics/brownie-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Chocolate Brownie</h5>
+                        <h6>65 Tk</h6>
+                        <button type="button" class="order-btn">Order</button>
+                        <button type="button" class="quick-btn" onclick="openPopup()">Quick View</button>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card dessert">
+                <img src="pics/brownie-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Chocolate Brownie</h5>
+                        <h6>80 Tk</h6>
+                        <button type="button" class="order-btn">Order</button>
+                        <button type="button" class="quick-btn">Quick View</button>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card dessert">
+                <img src="pics/chocolate pastry-2 (1).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Chocolate Pastry</h5>
+                        <h6>60 Tk</h6>
+                        <button type="button" class="order-btn">Order</button>
+                        <button type="button" class="quick-btn">Quick View</button>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card dessert">
+                <img src="pics/cupcake-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Cupcake</h5>
+                        <h6>40 Tk</h6>
+                        <button type="button" class="order-btn">Order</button>
+                        <button type="button" class="quick-btn">Quick View</button>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card dessert">
+                <img src="pics/donate.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Chocolate Donate</h5>
+                        <h6>40 Tk</h6>
+                        <button type="button" class="order-btn">Order</button>
+                        <button type="button" class="quick-btn">Quick View</button>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card dessert">
+                <img src="pics/white pastry-1 (2).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Vanilla Pastry</h5>
+                        <h6>60 Tk</h6>
+                        <button type="button" class="order-btn">Order</button>
+                        <button type="button" class="quick-btn">Quick View</button>
+                    </div>
+            </div>
+        </div>
+        
+        <div class="col">
+            <div class="card snacks">
+                <img src="pics/burger-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Chicken Burger</h5>
+                        <h6>80 Tk</h6>
+                        <button type="button" class="order-btn">Order</button>
+                        <button type="button" class="quick-btn">Quick View</button>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card snacks">
+                <img src="pics/burger-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Beef Burger</h5>
+                        <h6>100 Tk</h6>
+                        <button type="button" class="order-btn">Order</button>
+                        <button type="button" class="quick-btn">Quick View</button>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card snacks">
+                <img src="pics/chicken fry.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Chicken Fry</h5>
+                        <h6>85 Tk</h6>
+                        <button type="button" class="order-btn">Order</button>
+                        <button type="button" class="quick-btn">Quick View</button>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card snacks">
+                <img src="pics/chicken roll.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Chicken Roll</h5>
+                        <h6>25 Tk</h6>
+                        <button type="button" class="order-btn">Order</button>
+                        <button type="button" class="quick-btn">Quick View</button>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card snacks">
+                <img src="pics/chowmein plate.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Chowmein</h5>
+                        <h6>50 Tk</h6>
+                        <button type="button" class="order-btn">Order</button>
+                        <button type="button" class="quick-btn">Quick View</button>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card snacks">
+                <img src="pics/pizza-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Pizza Slice</h5>
+                        <h6>50 Tk</h6>
+                        <button type="button" class="order-btn">Order</button>
+                        <button type="button" class="quick-btn">Quick View</button>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card snacks">
+                <img src="pics/showrma-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Chicken Showrma</h5>
+                        <h6>70 Tk</h6>
+                        <button type="button" class="order-btn">Order</button>
+                        <button type="button" class="quick-btn">Quick View</button>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card snacks">
+                <img src="pics/showrma-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Beef Showrma</h5>
+                        <h6>80 Tk</h6>
+                        <button type="button" class="order-btn">Order</button>
+                        <button type="button" class="quick-btn">Quick View</button>
+                    </div>
+            </div>
+        </div>
+        
+        <div class="col">
+            <div class="card snacks">
+                <img src="pics/saslik.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Chicken Saslik</h5>
+                        <h6>65 Tk</h6>
+                        <button type="button" class="order-btn">Order</button>
+                        <button type="button" class="quick-btn">Quick View</button>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card snacks">
+                <img src="pics/chowmenin-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Chowmein</h5>
+                        <h6>50 Tk</h6>
+                        <button type="button" class="order-btn">Order</button>
+                        <button type="button" class="quick-btn">Quick View</button>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card beverages">
+                <img src="pics/coffee-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Coffee</h5>
+                        <h6>20 Tk</h6>
+                        <button type="button" class="order-btn">Order</button>
+                        <button type="button" class="quick-btn">Quick View</button>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card beverages">
+                <img src="pics/fanta.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Fanta 250 ml</h5>
+                        <h6>25 Tk</h6>
+                        <button type="button" class="order-btn">Order</button>
+                        <button type="button" class="quick-btn">Quick View</button>
+                    </div>
+            </div>
+        </div>
+
+         <div class="col">
+            <div class="card beverages">
+                <img src="pics/coke-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Coke 250 ml</h5>
+                        <h6>30 Tk</h6>
+                        <button type="button" class="order-btn">Order</button>
+                        <button type="button" class="quick-btn">Quick View</button>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card beverages">
+                <img src="pics/water.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Water 250 ml</h5>
+                        <h6>20 Tk</h6>
+                        <button type="button" class="order-btn">Order</button>
+                        <button type="button" class="quick-btn">Quick View</button>
+                    </div>
+            </div>
+        </div>
+
+
+    
+        <div class="col">
+            <div class="card lunch">
+                <img src="pics/chicken kichuri-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Chicken Kichuri</h5>
+                        <h6>80 Tk</h6>
+                        <button type="button" class="order-btn">Order</button>
+                        <button type="button" class="quick-btn">Quick View</button>
+                    </div>
+            </div>
+        </div>
+
+       
+
+        <div class="col">
+            <div class="card lunch">
+                <img src="pics/chicken biriyani-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Chicken Biriyani</h5>
+                        <h6>120 Tk</h6>
+                        <button type="button" class="order-btn">Order</button>
+                        <button type="button" class="quick-btn">Quick View</button>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card lunch">
+                <img src="pics/fried rice setmen-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Fried Rice</h5>
+                        <h6>110 Tk</h6>
+                        <button type="button" class="order-btn">Order</button>
+                        <button type="button" class="quick-btn">Quick View</button>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card lunch">
+                <img src="pics/fried rice.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Fried Rice</h5>
+                        <h6>110 Tk</h6>
+                        <button type="button" class="order-btn">Order</button>
+                        <button type="button" class="quick-btn">Quick View</button>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card breakfast">
+                <img src="pics/ruti.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Porota</h5>
+                        <h6>10 Tk</h6>
+                        <button type="button" class="order-btn">Order</button>
+                        <button type="button" class="quick-btn">Quick View</button>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card breakfast">
+                <img src="pics/shobji.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Mixed Vegetable</h5>
+                        <h6>20 Tk</h6>
+                        <button type="button" class="order-btn">Order</button>
+                        <button type="button" class="quick-btn">Quick View</button>
+                    </div>
+            </div>
+        </div>
+
+        
+
+    </div>
+
+
+
+
+
+    <div class="popup-container">
+
+        <div class="popup" id="popup">
+            <img src="pics/brownie-1.jpg" alt="">
+            <h3>Chocolate Borwnie</h3>
+            <button type="button" onclick="closePopup()" class="close-btn">X</button>
+
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="footer">
+
+        <div class="row">
+
+            <div class="col">
+                <h3>Logo <div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><img src="" alt=""></li>
+                </ul>
+            </div>
+
+
+            <div class="col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><img src="pics/iconizer-right-arrow.png" alt="" class="footer-right-img"><a href="about.html"> About</a></li>
+                    <li><img src="pics/iconizer-right-arrow.png" alt="" class="footer-right-img"><a href="#"> Services</a></li>
+                    <li><img src="pics/iconizer-right-arrow.png" alt="" class="footer-right-img"><a href="contact.html"> Contact</a></li>
+                </ul>
+            </div>
+
+
+            <div class="col">
+                <h3>Support Links</h3>
+                <ul>
+                    <li><img src="pics/iconizer-right-arrow.png" alt="" class="footer-right-img"><a href="#"> Privacy Policy</a></li>
+                    <li><img src="pics/iconizer-right-arrow.png" alt="" class="footer-right-img"><a href="#"> Tearms and Condition</a></li>
+                    <li><img src="pics/iconizer-right-arrow.png" alt="" class="footer-right-img"><a href="#"> Support</a></li>
+                </ul>
+            </div>
+
+
+            <div class="col">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><img src="pics/iconizer-location-_1_ (1).png" alt="" class="footer-right-img"><a href="#"> Sector 7, Uttara</a></li>
+                    <li><img src="pics/iconizer-mail.png" alt="" class="footer-right-img"><a href="#"> ....@gmail.com</a></li>
+                    <li><img src="pics/iconizer-phone-call.png" alt="" class="footer-right-img"><a href="#"> 01824755531</a></li>
+                </ul>
+            </div>
+
+            <hr>
+            
+            <div class="copyright">
+                <p>Copyright <img src="pics/iconizer-copyright.png" alt="" class="footer-right-img"> 2023 All Right Reserved</p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/e4e1dbdcb1.js" crossorigin="anonymous"></script>
+    <script src="js/first.js"></script>
+
+    <script>
+
+            
+        let popup = document.getElementById("popup");
+    
+        function openPopup(){
+            popup.classList.add("openpopup");
+        }
+    
+        function closePopup() {
+            popup.classList.remove("openpopup")
+        }
+    </script>
+
+</body>
+</html>
